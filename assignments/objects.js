@@ -87,10 +87,16 @@ console.log(antonietta.gender);
  const parent = {
   "name": "Susan",
   "age": 70,
-  speak: function (){
+  speak: function(){
     return "My name is " + parent.name},
   
-  child : { "name" : "Susan", "age" : 50,},
+  child : { 
+    "name" : "Susan", 
+    "age" : 50,
+    speak2: function(){
+      return "My name is " + child.name},
+  },
+
   grandchild : { "name" : "Sam", "age" : 30,}
 };
 
@@ -101,7 +107,7 @@ console.log (parent.child.age)
 // Log the name and age of the grandchild
 console.log (parent.grandchild.name, parent.grandchild.age)
 // Have the parent speak
-parent.speak()
+console.log (parent.speak())
 // Have the child speak
 
 // Have the grandchild speak
